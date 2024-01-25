@@ -7,7 +7,9 @@ W = 100
 H = 100
 
 im = np.zeros((W,H), np.uint8)
-for i in range(W): im[i,i] = 255
+for i in range(40): 
+    for j in range(40):
+        im[i+10,j+10] = (0,0,255)
 
 
 def show_im(im):
